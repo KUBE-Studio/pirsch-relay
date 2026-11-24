@@ -1,0 +1,26 @@
+<!-- Pirsch via pirsch-relay — put this into the <head> of every page.
+     Replace:
+       a.example.com        your relay subdomain (CNAME to Vercel)
+       YOUR-IDENTIFICATION-CODE
+                            Pirsch → dashboard settings → Integration
+       /SCRIPT-PATH etc.    exactly your RELAY_*_PATH values
+     Remove any other Pirsch snippet (api.pirsch.io), or visits count twice.
+
+     data-disable-resolution: no screen size is sent. Remove the attribute
+     if you want screen classes in the dashboard (adjust your privacy policy).
+
+     Custom events: ALWAYS pass an options object —
+       window.pirsch("Signup", { meta: { plan: "pro" } })   or
+       window.pirsch("Signup", {})
+     window.pirsch("Signup") without a second argument sends nothing. -->
+<script defer src="https://a.example.com/SCRIPT-PATH"
+    id="pianjs"
+    data-code="YOUR-IDENTIFICATION-CODE"
+    data-hit-endpoint="https://a.example.com/HIT-PATH"
+    data-event-endpoint="https://a.example.com/EVENT-PATH"
+    data-session-endpoint="https://a.example.com/SESSION-PATH"
+    data-disable-resolution></script>
+
+<!-- Optional: event helper (phone/e-mail clicks, window.relayEvent).
+     Only works if RELAY_EVENTS_SCRIPT_PATH is set; use that path here. -->
+<!-- <script defer src="https://a.example.com/EVENTS-SCRIPT-PATH"></script> -->

@@ -1,0 +1,10 @@
+# Local environment (contains your Pirsch access key)
+.env
+.env.*
+!.env.example
+
+# Vercel CLI project link (project and team IDs)
+.vercel
+
+node_modules/
+.DS_Store

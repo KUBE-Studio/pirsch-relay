@@ -1,0 +1,16 @@
+{
+  "name": "pirsch-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted first-party proxy for Pirsch Analytics on Vercel: cookieless analytics that ad blockers do not suppress.",
+  "license": "MIT",
+  "author": "Kube Studio (https://kube.studio)",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/proxy.test.mjs",
+    "local": "node scripts/local.mjs"
+  }
+}
